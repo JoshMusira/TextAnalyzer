@@ -1,0 +1,26 @@
+.section-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #daafbd;
+  border-radius: 10px;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center;
+  width: 90vw;
+  height: 5vw;
+  box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.Counter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  font-size: 18px;
+}
+.Counter p {
+  color: #faf5f5;
+  letter-spacing: 1.1px;
+  /* font-weight: 300; */
+}

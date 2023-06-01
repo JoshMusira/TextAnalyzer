@@ -1,0 +1,58 @@
+.Link {
+  position: relative;
+}
+.active::before,
+.Link::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 4px;
+  left: 10px;
+  right: 10px;
+  border-radius: 5px;
+  transform: scaleX(0);
+  bottom: -8px;
+  transition: all 0.35s ease-in-out;
+}
+.active::before {
+  transform: scaleX(1);
+}
+.Link:hover::before {
+  transform: scaleX(1);
+}
+.main-navbar {
+  background-color: #daafbd;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 2px 3px 5px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(255, 255, 255, 0.75);
+}
+.main-navbar-elements #Home {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.main-navbar-elements #about {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.main-navbar-elements #contact {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.main-navbar-elements {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.navbar-container {
+  color: #231020;
+  font-size: 20px;
+}
