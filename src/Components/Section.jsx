@@ -7,7 +7,10 @@ const Section = ({ text }) => {
     let my_text = text;
 
     const word_split = my_text.split(" ");
-    const words = word_split.length;
+    const words = word_split.length - 1;
+
+    // let words;
+    // !word_split[0] ? words = 0 : words = word_split.length;
 
 
     const character_split = my_text.split("");
@@ -21,10 +24,10 @@ const Section = ({ text }) => {
         let withoutAbbreviations = my_text.replace(/\b(?:[A-Z]\.)+/g, '');
 
         // Remove multiple spaces between sentences to avoid counting empty sentences
-        var withoutExtraSpaces = withoutAbbreviations.replace(/\s{2,}/g, ' ');
+        let withoutExtraSpaces = withoutAbbreviations.replace(/\s{2,}/g, ' ');
 
         // Count the number of matches
-        var matches = withoutExtraSpaces.match(sentenceRegex);
+        let matches = withoutExtraSpaces.match(sentenceRegex);
 
         // Return the count of sentences
         return matches ? matches.length : 0;
