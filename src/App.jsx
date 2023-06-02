@@ -5,11 +5,10 @@ import './App.css'
 // import AverageContainer from './Components/AverageContainer'
 import FooterContainer from './Components/FooterContainer'
 import Header from './Components/Header'
-import Section from './Components/Section'
-import TextArea from './Components/TextArea'
-import Home from './Pages/Home';
+
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import Home from './Pages/Home';
 
 function App() {
 
