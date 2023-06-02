@@ -7,9 +7,9 @@ import FooterContainer from './Components/FooterContainer'
 import Header from './Components/Header'
 import Section from './Components/Section'
 import TextArea from './Components/TextArea'
-import Home from './assets/Pages/Home';
-import About from './assets/Pages/About';
-import Contact from './assets/Pages/Contact';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 function App() {
 

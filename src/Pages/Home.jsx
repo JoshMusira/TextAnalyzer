@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../styles/textarea.css'
-import TextArea from '../../Components/TextArea'
+import '../styles/textarea.css'
+import TextArea from '../Components/TextArea'
 
 const Home = () => {
     return (

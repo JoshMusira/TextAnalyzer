@@ -1,11 +1,11 @@
 import React from 'react'
-import ContactComponent from '../../Components/ContactComponent';
+import ContactComponent from '../Components/ContactComponent';
 import { GoLocation } from "react-icons/go"
 import { MdOutlineAddIcCall } from "react-icons/md"
 import { FaFax } from "react-icons/fa"
 import { TfiEmail } from "react-icons/tfi"
 
-import '../../Styles/contact.css'
+import '../Styles/contact.css'
 
 const Contact = () => {
     return (
