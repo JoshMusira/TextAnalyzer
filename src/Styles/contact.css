@@ -74,7 +74,9 @@
   overflow: hidden;
   z-index: 1;
 }
-
+.FormContainer form button:hover {
+  cursor: pointer;
+}
 .FormContainer form button::before {
   position: absolute;
   content: "";
