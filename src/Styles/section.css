@@ -1,13 +1,14 @@
 .section-container {
   display: flex;
-  flex-direction: row;
   background-color: #daafbd;
+  flex-wrap: wrap;
+  /* gap: 5%; */
   border-radius: 10px;
   justify-content: space-around;
   margin-top: 20px;
   align-items: center;
   width: 90vw;
-  height: 5vw;
+  /* height: 15%; */
   box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
@@ -17,10 +18,19 @@
   flex-direction: column;
   gap: 5px;
   align-items: center;
+  /* border: 1px solid red; */
+  /* width: 10%; */
+
   font-size: 18px;
 }
 .Counter p {
   color: #faf5f5;
   letter-spacing: 1.1px;
   /* font-weight: 300; */
+}
+@media only screen and (max-width: 600px) {
+  .section-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

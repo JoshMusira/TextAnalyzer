@@ -18,3 +18,14 @@
 .footer-container span {
   color: #111;
 }
+
+@media only screen and (max-width: 1000px) {
+  .footer-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

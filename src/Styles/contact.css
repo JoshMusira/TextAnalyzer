@@ -17,6 +17,24 @@
   /* width: 70vw; */
   height: 20vh;
 }
+@media only screen and (max-width: 1000px) {
+  .masterContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* height: 115vh; */
+  }
+  .TopContainer {
+    display: grid;
+    /* width: 30%; */
+    z-index: 0;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .FormContainer form {
+    height: auto;
+  }
+}
 .FormContainer {
   display: flex;
   justify-content: center;
@@ -104,9 +122,10 @@
   background-color: #eee;
   border-radius: 5px;
   z-index: 1;
-  width: 15vw;
+  width: 17vw;
   padding: 10px;
   height: 20vh;
+  overflow-x: auto;
   box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
@@ -117,8 +136,10 @@
   transform: scale(1.1);
 }
 .containerComponent span {
+  padding-top: 3px;
+
   padding-bottom: 3px;
-  font-size: 40px;
+  font-size: 35px;
   color: #5f0221;
 }
 .containerComponent span:hover {
@@ -129,11 +150,40 @@
   cursor: pointer;
   color: #daafbd;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 17px;
 }
 .containerComponent p {
   color: gray;
   cursor: pointer;
   font-weight: 300;
   font-size: 16px;
+}
+@media only screen and (max-width: 1000px) {
+  .containerComponent {
+    width: 20vw;
+  }
+  .containerComponent h4 {
+    font-size: 12px;
+  }
+  .FormContainer form {
+    margin-top: 35%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .masterContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerComponent {
+    width: 50%;
+  }
+  .TopContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    flex-direction: column;
+  }
 }

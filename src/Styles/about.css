@@ -31,3 +31,29 @@
   line-height: 1.3;
   letter-spacing: 0.9px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftContainer img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .rightContainer h1 {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightContainer h1 {
+    font-size: 45px;
+  }
+}
